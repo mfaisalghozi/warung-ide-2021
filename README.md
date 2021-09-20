@@ -7,7 +7,7 @@ This repo contain project for skripsi called WarungIde website. This folder divi
 
 ## Project Progress
 - [x] Init project
-- [ ] 
+- [ ] Creating Homepage
 
 ## Stack used
 - MongoDB (ORM)
