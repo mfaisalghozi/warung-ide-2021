@@ -3,7 +3,7 @@ This repo contain project for skripsi called WarungIde website. This folder divi
 
 ## Installation Guide
 `git clone` this repo
-
+`npm install` on frontend or backend
 
 ## Project Progress
 - [x] Init project
