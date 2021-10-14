@@ -4,13 +4,14 @@ This repo contain project for skripsi called WarungIde website. This folder divi
 ## Installation Guide
 `git clone` this repo
 `npm install` on frontend or backend
+`npm run dev` to run on localhost
 
 ## Project Progress
 - [x] Init project
 - [ ] Creating Homepage
 
 ## Stack used
-- MongoDB (ORM)
+- MongoDB/MySQL (ORM)
 - Node JS (Programming Language)
 - Express (Backend Framework)
 - Vue JS (Frontend Framework)
