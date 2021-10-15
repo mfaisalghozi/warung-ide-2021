@@ -14,5 +14,6 @@ export default {
 <style lang="less" scoped>
 .test-wrapper {
   color: pink;
+  background-color: lemonchiffon;
 }
 </style>>
