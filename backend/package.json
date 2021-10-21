@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon server.js"
   },
   "author": "ghozi",
   "license": "ISC",
@@ -17,6 +17,8 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.5",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.12"
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.7.0"
   }
 }
