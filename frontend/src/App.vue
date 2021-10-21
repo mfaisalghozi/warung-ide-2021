@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <TestComponent />
+    <!-- <TestComponent />
     <img alt="Vue logo" src="./assets/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <h1>Testing</h1>
-    <h1>hei</h1>
+    <h1>hei</h1> -->
+    <router-view></router-view>
   </div>
 </template>
 
