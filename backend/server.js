@@ -18,6 +18,7 @@ server.use(cors(corsOptions))
 
 // Database Config
 const db = require('./models')
+
 // db.sequelize.sync()
 db.sequelize.sync({ force: true }).then(() => {
   console.log("DROP & RESYNC DB")
