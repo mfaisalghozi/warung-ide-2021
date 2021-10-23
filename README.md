@@ -1,16 +1,20 @@
 # warung-ide-2021
-This repo contain project for skripsi called WarungIde website. This folder divide into 2 part as backend & frontend.
+This repo contain project for skripsi called WarungIde website. the folder divide into 2 part as backend & frontend.
 
 ## Installation Guide
 - `git clone` this repo
-- `npm install` on frontend or backend
+- `npm install` on frontend and backend
+- `running your mySQL Server first`
 - `npm run dev` to run on localhost
+
 ---
+
 ## Project Progress
 - [x] Init project 
 - [x] Setup Webpack
 
 ### Frontend progress
+- [x] Setup Vue state
 - [ ] Creating Landing Page
 - [ ] Creating Homepage
 - [ ] Creating About Us Page
