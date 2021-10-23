@@ -9,23 +9,25 @@ This repo contain project for skripsi called WarungIde website. This folder divi
 ## Project Progress
 - [x] Init project 
 - [x] Setup Webpack
-- [ ] Setup Docker
 
 ### Frontend progress
 - [ ] Creating Landing Page
 - [ ] Creating Homepage
 - [ ] Creating About Us Page
 
-### Backend progress 
+### Backend progress
+- [ ] Setup routing for API response  
 - [ ] Initate Database
 - [ ] Implement Database
 
 ---
 
-## Project Architecture
+## App Architecture
+Web Scheme
 <img align="center" src="https://www.bezkoder.com/wp-content/uploads/2019/12/vue-node-express-mysql-architecture.png">
 
-Microservice Architecture
+Frontend Scheme
+<img align="center" src="https://www.bezkoder.com/wp-content/uploads/2019/12/vue-node-express-mysql-example-vue-client-overview.png">
 
 ---
 ## Stack used
