@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
+const { webpack } = require("webpack");
 
 module.exports = merge(common, {
   mode: "development",
@@ -10,15 +11,20 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, "dist")
   },
   devServer: {
+    port: 8080,
     client: {
       webSocketTransport: 'ws',
-    }
+    },
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html"
-    })
+    }),
   ],
+  optimization: {
+    runtimeChunk: 'single',
+  },
   module: {
     rules: [
       { test: /\.css$/, use: ["vue-style-loader", "css-loader"] },

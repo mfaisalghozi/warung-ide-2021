@@ -1,27 +1,34 @@
 require('dotenv').config()
 const express = require('express')
-const server = express()
 const cors = require('cors')
+const morgan = require('morgan')
+const server = express()
 
+// Server Config
+var corsOptions = {
+  origin: "http//localhost:8081"
+}
+
+server.use(morgan('combined'))
+server.use(express.json())
+server.use(express.urlencoded({ extended: true }))
+server.use(express.json())
+server.use(cors(corsOptions))
 
 // Database Config
-const mongoose = require('mongoose')
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
-const db = mongoose.connection
+const db = require('./models')
 
-// Router Config
-const router = require('./routes/projectRouter')
-
-server.use(express.json())
-server.use(cors())
-server.use('/project', router)
-
-server.get('/', (req, res) => {
-    res.send('Hello World!')
+// db.sequelize.sync()
+db.sequelize.sync({ force: true }).then(() => {
+  console.log("DROP & RESYNC DB")
 })
 
-db.on('error', (error) => console.error(error))
-db.once('open', () => console.log('Connected to database!'))
+// Router Config
+const projectRouter = require('./routes/projectRouter.routes')
+const tutorialRouter = require('./routes/tutorial.routes')
+server.use(projectRouter)
+server.use(tutorialRouter)
 
-
-server.listen(3000, () => console.log('Server started!'))
+// Main Apps Command
+const serverUrl = process.env.PORT || 3000
+server.listen(serverUrl, () => console.log(`Server started on port ${serverUrl}!`))
