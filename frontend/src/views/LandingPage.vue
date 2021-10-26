@@ -37,33 +37,33 @@
       </div>
     </div>
     <div class="team-section">
-     <h1 class="team-title">Our Team</h1>
-     <div class="member-section">
-       <div class="member">
-        <div class="member-image">
-          <p>image</p>
+      <h1 class="team-title">Our Team</h1>
+      <div class="member-section">
+        <div class="member">
+          <div class="member-image">
+            <p>image</p>
+          </div>
+          <div class="member-name">
+            Andi
+          </div>
         </div>
-        <div class="member-name">
-          Andi
+        <div class="member">
+          <div class="member-image">
+            <p>image</p>
+          </div>
+          <div class="member-name">
+            Frank
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <p>image</p>
+          </div>
+          <div class="member-name">
+            Ibas
+          </div>
         </div>
       </div>
-      <div class="member">
-        <div class="member-image">
-          <p>image</p>
-        </div>
-        <div class="member-name">
-          Frank
-        </div>
-      </div>
-      <div class="member">
-        <div class="member-image">
-          <p>image</p>
-        </div>
-        <div class="member-name">
-          Ibas
-        </div>
-      </div>
-     </div>
     </div>
   </div>
 </template>
@@ -90,8 +90,8 @@ export default {
     }
   }
 
-  .first-section, .third-section {
-    background-color: pink;
+  .first-section, .third-section, .team-section {
+    background-color: #D8F2FF;
   }
 
   .second-section, 
