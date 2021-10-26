@@ -6,12 +6,12 @@
         <h3>Share your idea to the world</h3>
       </div>
       <div class="image-info">
-        <p>image</p>
+        <img src="../assets/images/section2.jpg" alt="image-section-one">
       </div>
     </div>
     <div class="section second-section">
       <div class="image-info">
-        <p>image</p>
+        <img src="../assets/images/section2.jpg" alt="image-section-two">
       </div>
       <div class="text-info">
         <h1>Our Mission</h1>
@@ -24,12 +24,12 @@
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores eos ratione excepturi, repellat quia assumenda qui consectetur eius consequuntur!</h3>
       </div>
       <div class="image-info">
-        <p>image</p>
+        <img src="../assets/images/section3.jpg" alt="image-section-three">
       </div>
     </div>
     <div class="section four-section">
       <div class="image-info">
-        <p>image</p>
+        <img src="../assets/images/section3.jpg" alt="image-section-four">
       </div>
       <div class="text-info">
         <h1>Our Ideas</h1>
@@ -41,7 +41,7 @@
       <div class="member-section">
         <div class="member">
           <div class="member-image">
-            <p>image</p>
+            image
           </div>
           <div class="member-name">
             Andi
@@ -84,9 +84,11 @@ export default {
     justify-content: space-around;
     align-items: center;
     .image-info {
-      background-color: grey;
-      width: 25rem;
-      height: 25rem;
+      img {
+        border-radius: 20px;
+        width: 25rem;
+        height: 25rem;
+      }
     }
   }
 
