@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is footer
+    This is Hello
   </div>
 </template>
 
