@@ -6,7 +6,7 @@
         <h3>Share your idea to the world</h3>
       </div>
       <div class="image-info">
-        <img src="../assets/images/section2.jpg" alt="image-section-one">
+        <img src="../assets/images/section_test01.svg" alt="image-section-one">
       </div>
     </div>
     <div class="section second-section">
@@ -24,12 +24,12 @@
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores eos ratione excepturi, repellat quia assumenda qui consectetur eius consequuntur!</h3>
       </div>
       <div class="image-info">
-        <img src="../assets/images/section3.jpg" alt="image-section-three">
+        <img src="../assets/images/section3.svg" alt="image-section-three">
       </div>
     </div>
     <div class="section four-section">
       <div class="image-info">
-        <img src="../assets/images/section3.jpg" alt="image-section-four">
+        <img src="../assets/images/section4.jpg" alt="image-section-four">
       </div>
       <div class="text-info">
         <h1>Our Ideas</h1>
@@ -105,6 +105,10 @@ export default {
   }
 
   .team-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 90vh;
     h1 {
       font-size: 4rem;
@@ -114,6 +118,7 @@ export default {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      width: 100%;
       
       .member {
         .member-image {
