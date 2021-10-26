@@ -1,7 +1,10 @@
 <template>
   <div class="header-wrapper">
     <div class="logo-wrap">
-      WarungIde.co
+      <img src="../assets/images/icon/light-bulb.png" alt="bright-lamp">
+      <div class="text-image">
+        WarungIde.co
+      </div>
     </div>
     <div class="category-wrap">
       <a href="#home">Home</a>
@@ -37,8 +40,18 @@ export default {
 
   .logo-wrap {
     width: 15%;
-    font-size: 1.4rem;
-    font-family: 'Zen Antique Soft', serif;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    .text-image {
+      margin-left: .2rem;
+      font-size: 1.4rem;
+      font-family: 'Zen Antique Soft', serif;
+    }
+    img {
+      height: 34px;
+      width: 28px;
+    }
   }
 
   .category-wrap {
@@ -60,7 +73,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     width: 15%;
-    margin-left: 2rem;
+    margin-right: 2rem;
 
     a {
       text-decoration: none;
