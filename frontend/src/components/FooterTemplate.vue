@@ -5,15 +5,20 @@
       let us help you!
     </div>
     <div class="field-email">
-      <form>
-        <input type="text" placeholder="your question"/>
-        <button>Send</button>
+      <form action="mailto:mfaisalghozi99@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="message" placeholder="your question"/>
+        <button type="submit">Send Feedback</button>
       </form>
     </div>
     <div class="info-app">
       <div class="logo-image">
         <img src="../assets/images/icon/light-bulb.png" alt="bright-lamp">
         <div class="text-image">WarungIde.co</div>
+      </div>
+      <div class="love-text">
+        <a href="https://github.com/mfaisalghozi/warung-ide-2021">
+          Made with 🖤 by us
+        </a>
       </div>
       <div class="logo-socmed">
         <a href="#twitter">
@@ -44,9 +49,9 @@ export default {
   background-color: #DFDFDF;
   display: flex; 
   flex-direction: column;
-  height: 20rem;
-  justify-content: center;
+  height: 25rem;
   align-items: center;
+  justify-content: space-around;
 
   .text-question {
     font-family: 'Inter', sans-serif;
@@ -84,6 +89,15 @@ export default {
     width: 100%;
     justify-content: space-between;
 
+    .love-text > a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: #4FE3CA;
+      }
+    }
+
     .logo-image {
       margin-left: 3rem;
       display: flex;
@@ -92,7 +106,7 @@ export default {
       justify-content: space-around;
       
       .text-image {
-        margin-left: .3rem;
+        margin-left: .7rem;
         font-size: 1.2rem;
         font-family: 'Zen Antique Soft', serif;
       }

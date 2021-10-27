@@ -7,6 +7,7 @@ import HaloGuys from '../components/HaloGuys.vue'
 
 // Views
 import LandingPage from '../views/LandingPage.vue'
+import AboutUsPage from '../views/AboutUsPage.vue'
 
 Vue.use(Router)
 
@@ -15,12 +16,17 @@ export default new Router({
     {
       path: '/',
       name: 'LandingPage',
-      component: LandingPage
+      component: LandingPage,
+    },
+    {
+      path: '/aboutus',
+      name: 'AboutUsPage',
+      component: AboutUsPage,
     },
     {
       path: '/haloguys',
       name: 'HaloGuys',
-      component: HaloGuys
+      component: HaloGuys,
     },
     {
       path: '/helloworld',

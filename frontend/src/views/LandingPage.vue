@@ -15,13 +15,21 @@
       </div>
       <div class="text-info">
         <h1>Our Mission</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nulla corrupti assumenda ex iusto ullam, sunt eos molestias quo dignissimos!</h3>
+        <h3>
+          To make world a better place to live, With Imagination and Ideas.
+          We are here to make your ideas happen. <br><br>
+          - Ideas, Creativity, Innovative -
+        </h3>
       </div>
     </div>
     <div class="section third-section">
       <div class="text-info">
         <h1>Our Vision</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores eos ratione excepturi, repellat quia assumenda qui consectetur eius consequuntur!</h3>
+        <h3>
+          Imagination is one of the greatest human ability to achieve our prosperity in the world.
+          We are here to helping you create a better understanding about idea & make your idea come true<br><br>
+          - Unity, Stabillity, Agillity -
+        </h3>
       </div>
       <div class="image-info">
         <img src="../assets/images/section3.svg" alt="image-section-three">
@@ -33,7 +41,11 @@
       </div>
       <div class="text-info">
         <h1>Our Ideas</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur quam veniam reprehenderit, voluptatem optio odio a omnis unde cumque!</h3>
+        <h3>
+          Our presence here, to help you achieve your financial goals to make your dream come true.
+          Spread your ideas, and let the world support you to realize your idea. <br><br>
+          - Helping, Caring, Supporting -
+        </h3>
       </div>
     </div>
     <div class="team-section">
@@ -41,10 +53,18 @@
       <div class="member-section">
         <div class="member">
           <div class="member-image">
-            image
+            <img src="../assets/images/team/bill.jpg" alt="bill-petrus-team-01">
           </div>
           <div class="member-name">
-            Andi
+            Bill Petrus - Backend Engineer
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-image">
+            <img src="../assets/images/team/jeffrey.jpg" alt="jeffrey-team-02">
+          </div>
+          <div class="member-name">
+            Jeffrey Marcellino - Database Engineer
           </div>
         </div>
         <div class="member">
@@ -52,15 +72,7 @@
             <p>image</p>
           </div>
           <div class="member-name">
-            Frank
-          </div>
-        </div>
-        <div class="member">
-          <div class="member-image">
-            <p>image</p>
-          </div>
-          <div class="member-name">
-            Ibas
+            M Faisal Ghozi - Frontend Engineer
           </div>
         </div>
       </div>
@@ -90,6 +102,20 @@ export default {
         height: 25rem;
       }
     }
+    h1 {
+      font-size: 64px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .first-section {
+    .text-info > h3 {
+      font-size: 48px;
+      font-style: italic;
+      font-weight: lighter;
+    }
   }
 
   .first-section, .third-section, .team-section {
@@ -107,9 +133,8 @@ export default {
   .team-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 95vh;
     h1 {
       font-size: 4rem;
     }
@@ -119,21 +144,40 @@ export default {
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      
+      height: 55%;
+
       .member {
+        margin: 0 20px;
+        width: 23rem;
+        height:  28rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+
+        &:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
         .member-image {
-          background-color: grey;
           width: 100%;
-          p {
-            padding: 0;
-            margin: 0;
+          height: 60%; 
+          img {
+            height: 100%;
+            border-radius: 10px;
           }
         }
-        background-color: salmon;
-        margin: 0 20px;
-        width: 20rem;
-        height:  20rem;
-        
+
+        .member-name {
+          font-weight: 500;
+          margin-top: 2rem;
+          color: black;
+          font-style: italic;
+          font-size: 18px;
+        }
       }
     }
 

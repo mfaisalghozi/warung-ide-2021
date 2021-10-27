@@ -1,15 +1,20 @@
 <template>
   <div class="header-wrapper">
     <div class="logo-wrap">
-      <img src="../assets/images/icon/light-bulb.png" alt="bright-lamp">
-      <div class="text-image">
-        WarungIde.co
-      </div>
+      <a href="/">
+        <img 
+          src="../assets/images/icon/light-bulb.png" 
+          alt="bright-lamp"
+        >
+        <div class="text-image">
+          WarungIde.co
+        </div>
+      </a>
     </div>
     <div class="category-wrap">
       <a href="#home">Home</a>
       <a href="#discover">Discover</a>
-      <a href="#aboutus">About Us</a>
+      <a href="/#/aboutus">About Us</a>
     </div>
     <div class="button-wrap">
       <a class="button-register" href="#register">
@@ -40,11 +45,15 @@ export default {
 
   .logo-wrap {
     width: 15%;
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
+    a {
+      display: flex;
+      flex-direction: row;
+      margin-left: 2rem;
+      text-decoration: none;
+      color: black;
+    }
     .text-image {
-      margin-left: .2rem;
+      margin-left: .7rem;
       font-size: 1.4rem;
       font-family: 'Zen Antique Soft', serif;
     }
