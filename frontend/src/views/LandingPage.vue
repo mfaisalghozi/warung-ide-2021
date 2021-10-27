@@ -69,7 +69,7 @@
         </div>
         <div class="member">
           <div class="member-image">
-            <p>image</p>
+            <img src="../assets/images/team/ghozi.jpg" alt="ghozi-team-03">
           </div>
           <div class="member-name">
             M Faisal Ghozi - Frontend Engineer
