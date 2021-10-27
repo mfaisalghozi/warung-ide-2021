@@ -12,9 +12,9 @@
       </a>
     </div>
     <div class="category-wrap">
-      <a href="#home">Home</a>
-      <a href="#discover">Discover</a>
-      <a href="/#/aboutus">About Us</a>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/discover">Discover</router-link>
+      <router-link to="/aboutus">About Us</router-link>
     </div>
     <div class="button-wrap">
       <a class="button-register" href="#register">

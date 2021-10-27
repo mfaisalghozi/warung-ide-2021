@@ -17,7 +17,7 @@
       </div>
       <div class="love-text">
         <a href="https://github.com/mfaisalghozi/warung-ide-2021">
-          Made with 🖤 by us
+          Made with 🖤 from us
         </a>
       </div>
       <div class="logo-socmed">
