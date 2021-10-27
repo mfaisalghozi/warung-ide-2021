@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-wrapper">
     This is Home Page
   </div>
 </template>
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+.home-wrapper {
+  height: 90vh;
+}
 </style>
