@@ -46,7 +46,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
 .footer-wrapper {
-  background-color: #DFDFDF;
+  // background-color: #DFDFDF;
+  border: 1px solid grey;
   display: flex; 
   flex-direction: column;
   height: 25rem;

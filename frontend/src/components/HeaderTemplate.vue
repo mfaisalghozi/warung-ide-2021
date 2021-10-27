@@ -37,6 +37,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
 .header-wrapper {
+  border-bottom: 1px solid grey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
