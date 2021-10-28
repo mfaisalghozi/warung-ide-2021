@@ -52,7 +52,7 @@ export default {
     border-top-left-radius: 29px;
     border-top-right-radius: 29px;
     height: 55%;
-    background-color: blue;
+    background-color: salmon;
   }
 
   .content-info {
