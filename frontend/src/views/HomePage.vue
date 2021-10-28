@@ -1,6 +1,8 @@
 <template>
   <div class="home-wrapper">
-    This is Home Page
+    <div class="feature-section">
+      feature section
+    </div>
   </div>
 </template>
 
