@@ -3,28 +3,35 @@ This repo contain project for skripsi called WarungIde website. the folder divid
 
 ## Installation Guide
 - `git clone` this repo
-- `npm install` on frontend and backend
+- `npm install` on frontend folder and backend folder
 - `running your mySQL Server first`
 - `npm run dev` to run on localhost
 
 ---
 
 ## Project Progress
-- [x] Init project 
-- [x] Setup Webpack
 
-### Frontend progress
-- [x] Setup Vue state
-- [ ] Creating Landing Page
-- [ ] Creating Homepage
-- [ ] Creating About Us Page
+- ### Web Progress :
+  - [x] Init project - 10/10/2021
+  - [x] Setup Webpack - 10/10/2021
 
-### Backend progress
-- [ ] Setup routing for API response  
-- [ ] Initate Database
-- [ ] Implement Database
+- ### Frontend progress :
+  - [x] Setup Vue state - 20/10/2021
+  - [x] Developing Landing Page - 27/10/2021
+  - [x] Developing About Us Page - 27/10/2021
+  - [ ] Developing Homepage
+
+- ### Backend progress :
+  - [ ] Setup routing for API response  
+  - [ ] Initate Database
+  - [ ] Implement Database
 
 ---
+## Stack used
+- MongoDB/MySQL (ORM)
+- Node JS (Programming Language)
+- Express (Backend Framework)
+- Vue JS (Frontend Framework)
 
 ## App Architecture
 Web Scheme
@@ -34,12 +41,17 @@ Frontend Scheme
 <img align="center" src="https://www.bezkoder.com/wp-content/uploads/2019/12/vue-node-express-mysql-example-vue-client-overview.png">
 
 ---
-## Stack used
-- MongoDB/MySQL (ORM)
-- Node JS (Programming Language)
-- Express (Backend Framework)
-- Vue JS (Frontend Framework)
 
+## Project Assets
+
+### Image :
+- X
+
+### Fonts :
+- X
+### Icon :
+- <a target="_blank" href="https://icons8.com/icon/LcMH8YqF0Ej1/like">Like</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- <a target="_blank" href="https://icons8.com/icon/86721/love">Love</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 ## Project Reference
 This project using several reference :
 - [FreeCodeCamp article](https://www.freecodecamp.org/news/build-a-full-stack-mevn-app/) 
