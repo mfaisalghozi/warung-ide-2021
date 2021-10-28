@@ -18,7 +18,31 @@
           Popular Project
         </div>
         <div v-if="isPopularContentMore" class="section-content-more">
-            Content is popular is more
+          <carousel 
+            :scrollPerPage="false"
+            :navigationEnabled="false"
+          >
+            <slide>
+              <span class="label">
+                <ProjectMainCard />
+              </span>
+            </slide>
+            <slide>
+              <span class="label">
+                <ProjectMainCard />
+              </span>
+            </slide>
+            <slide>
+              <span class="label">
+                <ProjectMainCard />
+              </span>
+            </slide>
+            <slide>
+              <span class="label">
+                <ProjectMainCard />
+              </span>
+            </slide>
+          </carousel>
         </div>
         <div v-else class="section-content">
           <ProjectMainCard />
@@ -36,9 +60,12 @@
       </div>
       <div class="article-section">
         <div class="section-title">
-           Article and News
+          Article and News
         </div>
         <div class="section-content">
+          <ArticleCard />
+          <ArticleCard />
+          <ArticleCard />
           <ArticleCard />
         </div>
       </div>
@@ -70,6 +97,7 @@ export default {
   data: () => {
     return {
       isPopularContentMore: false,
+      isFundingContentMore: false,
     }
   }
 }
@@ -109,11 +137,15 @@ export default {
     }
 
     .popular-section {
-      margin: 20px 0;
+      margin: 20px 0 0 0;
+      height: 70vh;
+    }
+
+    .most-funding-section {
+      height: 70vh;
     }
 
     .popular-section, .most-funding-section {
-      height: 70vh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -139,7 +171,7 @@ export default {
     .article-section {
       height: 70vh;
       width: 100%;
-      background-color: pink;
+      margin-top: 4rem;
 
       .section-title {
         height: 10%;
@@ -148,6 +180,13 @@ export default {
         font-weight: 500;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin-left: 1.2rem;
+      }
+
+      .section-content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;
       }
     }
   }

@@ -31,16 +31,15 @@ export default {
     border-radius: 30px;
     width: 100%;
     height: 6rem;  
-    background-color: rgba(0,0,0,.2);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
+    border: 1px solid black;
     display: flex;
     flex-direction: row;
     
     .list-image {
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
-      background-color: red;
+      background-color: salmon;
       width: 40%;
     }
 

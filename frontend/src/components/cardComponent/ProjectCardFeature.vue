@@ -51,12 +51,13 @@ export default {
   .content-image {
     border-top-left-radius: 29px;
     border-top-right-radius: 29px;
-    height: 55%;
+    height: 50%;
     background-color: salmon;
   }
 
   .content-info {
     padding: .5rem;
+
     .content-title {
       font-size: 30px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -65,7 +66,7 @@ export default {
     }
 
     .content-description {
-      margin: 1rem 0;
+      margin: 1.4rem 0;
       width: 70%;
       font-size: 16px;
       text-align: left;
