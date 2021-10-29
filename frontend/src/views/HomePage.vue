@@ -3,9 +3,15 @@
     <div class="section">
       <div class="feature-section">
         <div class="project-feature-list">
-          <ProjectListFeature />
-          <ProjectListFeature />
-          <ProjectListFeature />
+          <router-link to="/projectDetail">
+            <ProjectListFeature />
+          </router-link>
+          <router-link to="/projectDetail">
+            <ProjectListFeature />
+          </router-link>
+          <router-link to="/projectDetail">
+            <ProjectListFeature />
+          </router-link>
         </div>
         <div class="project-feature-card">
           <router-link to="/projectDetail">
@@ -48,9 +54,11 @@
         </div>
         <div v-else class="section-content">
           <div v-for="(project, index) in projectPopular" :key="index + project.contentId">
-            <ProjectMainCard 
-              :projectData="project"
-            />
+            <router-link to="/projectDetail">
+              <ProjectMainCard 
+                :projectData="project"
+              />
+            </router-link>
           </div>
         </div>
       </div>
@@ -60,9 +68,11 @@
         </div>
         <div class="section-content">
           <div v-for="(project, index) in projectMostFunding" :key="index + project.contentId">
-            <ProjectMainCard 
-              :projectData="project"
-            />
+            <router-link :to="{ path: '/projectDetail', query: { projectId: project.contentId }}">
+              <ProjectMainCard 
+                :projectData="project"
+              />
+            </router-link>
           </div>
         </div>
       </div>
@@ -253,6 +263,10 @@ export default {
       }
       .project-feature-list {
         width: 100%;
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
 
@@ -285,6 +299,11 @@ export default {
         flex-direction: row;
         height: 70%;
         align-items: center;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
 
