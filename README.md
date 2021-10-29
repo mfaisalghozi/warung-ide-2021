@@ -16,11 +16,24 @@ This repo contain project for skripsi called WarungIde website. the folder divid
   - [x] Setup Webpack - 10/10/2021
 
 - ### Frontend progress :
-  - [x] Setup Vue state - 20/10/2021
-  - [x] Developing Landing Page - 27/10/2021
-  - [x] Developing About Us Page - 27/10/2021
-  - [ ] Developing Homepage
-
+  - ### Main Feature
+    - [x] Setup Vue state - 20/10/2021
+    - [x] Developing Landing Page - 27/10/2021
+    - [x] Developing About Us Page - 27/10/2021
+    - [x] Developing Homepage - 29/10/2021
+    - [ ] Developing Category Page
+    - [ ] Developing Detail Project Page
+    - [ ] Developing Detail Project Section Updates
+    - [ ] Developing Detail Project Section FAQ
+    - [ ] Developing Detail Project Section Comments
+    - [ ] Developing Pop Up Packages Overlay Modal
+  - ### User Feature
+    - [ ] Login Page
+    - [ ] Register Page
+    - [ ] User Profile Page
+  - ### Creator Feature
+    - [ ] Create Project Page
+    - [ ] Read, Update & delete project page
 - ### Backend progress :
   - [ ] Setup routing for API response  
   - [ ] Initate Database
