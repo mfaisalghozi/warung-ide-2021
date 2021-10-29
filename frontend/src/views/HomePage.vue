@@ -9,7 +9,9 @@
         </div>
         <div class="project-feature-card">
           <router-link to="/projectDetail">
-            <ProjectCardFeature />
+            <ProjectCardFeature 
+              :projectData="projectFeatureSingle"
+            />
           </router-link>
         </div>
       </div>
@@ -45,8 +47,11 @@
           </carousel>
         </div>
         <div v-else class="section-content">
-          <ProjectMainCard />
-          <ProjectMainCard />
+          <div v-for="(project, index) in projectPopular" :key="index + project.contentId">
+            <ProjectMainCard 
+              :projectData="project"
+            />
+          </div>
         </div>
       </div>
       <div class="most-funding-section">
@@ -54,8 +59,11 @@
           Most Funding Project
         </div>
         <div class="section-content">
-          <ProjectMainCard />
-          <ProjectMainCard />
+          <div v-for="(project, index) in projectMostFunding" :key="index + project.contentId">
+            <ProjectMainCard 
+              :projectData="project"
+            />
+          </div>
         </div>
       </div>
       <div class="article-section">
@@ -63,10 +71,11 @@
           Article and News
         </div>
         <div class="section-content">
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
+          <ArticleCard 
+            v-for="(article, index) in articleAndNews"
+            :key="index + article.contentId"
+            :articleData="article"
+          />
         </div>
       </div>
     </div>
@@ -98,7 +107,118 @@ export default {
     return {
       isPopularContentMore: false,
       isFundingContentMore: false,
+      projectFeatureSingle: {},
+      projectFeatureList: [],      
+      projectPopular: [],
+      projectMostFunding: [],
+      articleAndNews: [],
     }
+  },
+  created () {
+    this.checkAvailableContent()
+  },
+  methods: {
+    checkAvailableContent () {
+      this.checkAvailableProjectFeatureSingle()
+      this.checkAvailableProjectFeatureList()
+      this.checkAvailableProjectPopular()
+      this.checkAvailableProjectMostFunding()
+      this.checkAvailableArticleAndNews()
+    },
+    checkAvailableProjectFeatureList () {
+      const tempContentFeatureList = [{
+        contentId: 5,
+        contentImageURL: '/testing',
+        contentTitle: 'Project Title Here',
+        contentDescription: 'orem ipsum dolor sit amet consectetur adipisicing elit. Eaque id est fuga ducimus nesciunt, ratione aperiam commodi rem architecto nihil?',
+      }]
+      this.projectFeatureList = tempContentFeatureList
+    },
+    checkAvailableProjectFeatureSingle () {
+      // CHECKING API FOR AVAILABLE PROJECT FEATURE
+      const tempContentFeature = {
+        contentId: 1,
+        contentImageURL: '/testing',
+        contentTitle: 'Project Title Here',
+        contentDescription: 'orem ipsum dolor sit amet consectetur adipisicing elit. Eaque id est fuga ducimus nesciunt, ratione aperiam commodi rem architecto nihil?',
+        contentFundedPercentage: 90,
+      }
+      this.projectFeatureSingle = tempContentFeature
+    },
+    checkAvailableProjectPopular () {
+      // CHECKING API FOR AVAILABLE PROJECT POPULAR
+      const tempContentPopular = [
+        {
+          contentId: 2,
+          contentImageURL: '/testing',
+          contentTitle: 'Project name here',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facilis consequuntur, laborum et unde quod corporis culpa illum pariatur eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nam!',
+          contentCreator: 'Mister Ex',
+        },
+        {
+          contentId: 6,
+          contentImageURL: '/testing-six',
+          contentTitle: 'Project name six',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facilis consequuntur, laborum et unde quod corporis culpa illum pariatur eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nam!',
+          contentCreator: 'Mister Ah',
+        },
+      ]
+      this.projectPopular = tempContentPopular
+    },
+    checkAvailableProjectMostFunding () {
+      // CHECKING API FOR AVAILABLE PROJECT MOST FUNDING
+      const tempContentMostFunding = [
+        {
+          contentId: 3,
+          contentImageURL: '/testing-zerothree',
+          contentTitle: 'Project name here',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facilis consequuntur, laborum et unde quod corporis culpa illum pariatur eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nam!',
+          contentCreator: 'Mister Be',
+        },
+        {
+          contentId: 8,
+          contentImageURL: '/testing-eight',
+          contentTitle: 'Project name eight',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facilis consequuntur, laborum et unde quod corporis culpa illum pariatur eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nam!',
+          contentCreator: 'Mister Eight',
+        },
+      ]
+      this.projectMostFunding = tempContentMostFunding
+    },
+    checkAvailableArticleAndNews () {
+      // CHECKING API FOR AVAILABLE ARTICLE AND NEWS
+      const tempContentArticle = [
+        {
+          contentId: 4,
+          contentImageURL: '/article-foure',
+          contentTitle: 'News Four',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci e diam sapien, finibus eu metus ac, porttitor feugiat elit. Vestibulum varius ultricies ante, in convallis justo varius a.',
+          contentCreator: 'Mister Four',
+        },
+        {
+          contentId: 9,
+          contentImageURL: '/article-nine',
+          contentTitle: 'News Nine',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci e diam sapien, finibus eu metus ac, porttitor feugiat elit. Vestibulum varius ultricies ante, in convallis justo varius a.',
+          contentCreator: 'Mister Nine',
+        },
+        {
+          contentId: 10,
+          contentImageURL: '/article-ten',
+          contentTitle: 'News Ten',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci e diam sapien, finibus eu metus ac, porttitor feugiat elit. Vestibulum varius ultricies ante, in convallis justo varius a.',
+          contentCreator: 'Mister Ten',
+        },
+        {
+          contentId: 11,
+          contentImageURL: '/article-eleven',
+          contentTitle: 'News Eleven',
+          contentDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci e diam sapien, finibus eu metus ac, porttitor feugiat elit. Vestibulum varius ultricies ante, in convallis justo varius a.',
+          contentCreator: 'Mister Eleven',
+        },
+      ]
+      this.articleAndNews = tempContentArticle
+    },
   }
 }
 </script>

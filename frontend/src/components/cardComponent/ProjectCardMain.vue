@@ -36,6 +36,12 @@
 <script>
 export default {
   name: 'ProjectMainCard',
+  props: {
+    projectData: {
+      type: Object,
+      default: {}
+    }
+  }
 }
 </script>
 

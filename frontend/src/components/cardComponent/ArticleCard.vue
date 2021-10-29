@@ -20,6 +20,12 @@
 <script>
 export default {
   name: 'ArticleCardWrapper',
+  props: {
+    articleData: {
+      type: Object,
+      default: {},
+    }
+  }
 }
 </script>
 

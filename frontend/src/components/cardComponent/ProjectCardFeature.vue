@@ -5,16 +5,14 @@
     </div>
     <div class="content-info">
       <div class="content-title">
-        Project Title here
+        {{ this.projectName }}
       </div>
       <div class="content-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Eaque id est fuga ducimus nesciunt, 
-        ratione aperiam commodi rem architecto nihil?
+        {{ this.projectDesc }}
       </div>
       <div class="content-addition">
         <div class="total-funded-label">
-          Total Funded 87%
+          Total Funded {{ this.projectPercentage }}%
         </div>
         <div class="icon-label">
           <div class="icon-love">
@@ -35,7 +33,30 @@
 
 <script>
 export default {
-  name: 'ProjectCardFeature'
+  name: 'ProjectCardFeature',
+  props: {
+    projectData: {
+      type: Object,
+      default: {
+        contentId: 1,
+        contentImageURL: '/testing',
+        contentTitle: 'Project Title Here',
+        contentDescription: 'Lorem ipsum dua tiga tutup botol',
+        contentFundedPercentage: 90,
+      }
+    }
+  },
+  computed: {
+    projectName () {
+      return this.projectData.contentTitle
+    },
+    projectDesc () {
+      return this.projectData.contentDescription
+    },
+    projectPercentage () {
+      return this.projectData.contentFundedPercentage
+    }
+  }
 }
 </script>
 
