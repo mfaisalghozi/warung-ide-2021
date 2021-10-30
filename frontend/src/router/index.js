@@ -10,6 +10,7 @@ import LandingPage from '../views/LandingPage.vue'
 import HomePage from '../views/HomePage.vue'
 import AboutUsPage from '../views/AboutUsPage.vue'
 import DiscoveryPage from '../views/DiscoveryPage.vue'
+import CategoryPage from '../views/CategoryPage.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/discover',
       name: 'DiscoveryPage',
       component: DiscoveryPage,
+    },
+    {
+      path: '/category/:categoryId',
+      name: 'CategoryId',
+      component: CategoryPage
     },
     {
       path: '/haloguys',
