@@ -11,7 +11,7 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, "dist")
   },
   devServer: {
-    port: 8080,
+    port: 8585,
     client: {
       webSocketTransport: 'ws',
     },
