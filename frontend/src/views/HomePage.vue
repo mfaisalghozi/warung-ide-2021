@@ -298,8 +298,8 @@ export default {
         display: flex;
         flex-direction: row;
         height: 70%;
+        width: 100%;
         align-items: center;
-
         a {
           text-decoration: none;
           color: black;

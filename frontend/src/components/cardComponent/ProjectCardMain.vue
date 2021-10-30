@@ -48,11 +48,11 @@ export default {
 <style lang="less" scoped>
 .project-main-card {
   height: 340px;
-  width: 600px;
+  width: 620px;
   display: flex;
   flex-direction: row;
   margin: 0 20px;
-  border: 1px solid black;
+  border: 1px solid rgba(0,0,0,.5);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .card-image {
