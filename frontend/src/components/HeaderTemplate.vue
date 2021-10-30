@@ -11,10 +11,17 @@
         </div>
       </a>
     </div>
-    <div class="category-wrap">
+    <div v-if="isInLanding" class="category-wrap">
       <router-link to="/home">Home</router-link>
       <router-link to="/discover">Discover</router-link>
       <router-link to="/aboutus">About Us</router-link>
+    </div>
+    <div v-else class="category-wrap">
+      <router-link to="/category/arts">Arts</router-link>
+      <router-link to="/category/technology">Technology</router-link>
+      <router-link to="/category/games">Games</router-link>
+      <router-link to="/category/books">Books</router-link>
+      <router-link to="/category/movies">Movie</router-link>
     </div>
     <div class="button-wrap">
       <a class="button-register" href="#register">
@@ -30,6 +37,14 @@
 <script>
 export default {  
   name: "HeaderTemplate",
+  computed: {
+    currentRouteName () {
+      return this.$route.name
+    },
+    isInLanding () {
+      return this.$route.name === 'LandingPage' || this.$route.name === 'AboutUsPage'
+    }
+  }
 }
 </script>
 
