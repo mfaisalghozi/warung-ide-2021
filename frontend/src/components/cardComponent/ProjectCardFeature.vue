@@ -78,6 +78,10 @@ export default {
 
   .content-info {
     padding: .5rem;
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .content-title {
       font-size: 30px;
@@ -87,7 +91,6 @@ export default {
     }
 
     .content-description {
-      margin: 1.4rem 0;
       width: 70%;
       font-size: 16px;
       text-align: left;
