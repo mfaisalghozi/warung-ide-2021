@@ -43,6 +43,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
+  background-color: rgba(0,0,0,.05);
+
 
   .logo-wrap {
     width: 15%;
